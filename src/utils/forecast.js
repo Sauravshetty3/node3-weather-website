@@ -14,7 +14,10 @@ const forecast = (latitude, longitude, callback) => {
         } else if (body.error) {
             callback("Unable to find location", undefined);
         } else {
-            callback(undefined, "Its currently" + body.main.temp + " degree.");
+            callback(
+                undefined,
+                "Its currently" + body.main.temp + " degree. Have a Beautiful day!!"
+            );
         }
     });
 };
